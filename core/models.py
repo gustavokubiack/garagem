@@ -14,7 +14,7 @@ class Categoria(models.Model):
     def __str__(self):
         return self.descricao
 
-class Carro(models.Model):
+class Veiculo(models.Model):
     modelo = models.CharField(max_length=50)
     marca = models.ForeignKey(Marca, on_delete=models.PROTECT, related_name="carros")
     categoria = models.ForeignKey(

@@ -1,7 +1,6 @@
-from dataclasses import field, fields
 from rest_framework.serializers import ModelSerializer
 
-from core.models import Categoria, Marca, Carro
+from core.models import Categoria, Marca, Veiculo
 
 class CategoriaSerializer(ModelSerializer):
     class Meta: 
@@ -13,7 +12,7 @@ class MarcaSerializer(ModelSerializer):
         model = Marca
         fields = "__all__"
 
-class CarroSerializer(ModelSerializer):
+class VeiculoSerializer(ModelSerializer):
     class Meta: 
-        model = Carro
+        model = Veiculo
         fields = "__all__"

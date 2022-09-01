@@ -8,7 +8,7 @@ from core.views import CategoriaViewSet, MarcaViewSet, VeiculoViewSet
 router = DefaultRouter()
 router.register(r'categorias', CategoriaViewSet)
 router.register(r'marcas', MarcaViewSet)
-router.register(r'veiculos  ', VeiculoViewSet)
+router.register(r'veiculos', VeiculoViewSet)
 
 urlpatterns = [
     path('admin/', admin.site.urls),
